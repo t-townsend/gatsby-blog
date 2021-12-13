@@ -1,13 +1,9 @@
 import React from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import PrimaryLayout from "../layouts/PrimaryLayout"
 
 export default () => (
-  <main>
-    <Header />
-    <div className="container">
-      <div className="row justify-content-md-center">
-        <div className="col-xs-6">
+ <PrimaryLayout column="col-xs-6">
+     <div className="pt-5">
           <h1>About Us</h1>
           <p>
             The abnormal mind is quick to detect and attach itself to this
@@ -22,9 +18,7 @@ export default () => (
             by obvious suppressions. Reserving judgments is a matter of infinite
             hope.
           </p>
-        </div>
-      </div>
-    </div>
-    <Footer fixed="bottom" />
-  </main>
+     </div>
+ </PrimaryLayout>
+    
 )
